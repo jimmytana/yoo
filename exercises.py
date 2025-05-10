@@ -1,8 +1,8 @@
-number_list = []
-n = int(input("How many numbers do you want to enter? "))
-
+a=[]
+n=int(input("how many student you want to find their average :"))
 for i in range(n):
-    num = int(input(f"Enter number : "))
-    number_list.append(num)
-
-print("The list of numbers is:", number_list)
+    p=int(input("please enter maks to find the aveerage :"))
+    a.append(p)
+print(a)
+avg=sum(a)/len(a)
+print("the average of entered marks is :",avg)
