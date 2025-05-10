@@ -1,8 +1,12 @@
-def text_formater(text:str,suffix=True,preffix=True,capitalize=False):
-    text=text.capitalize()
-    print("the formatted text is as follows :",f"{suffix}{text}{preffix}")
-text=input("please enter a text to formate: ")
-suffix=input("enter the suffix :")
-preffix=input("please enter your prefed preffix :")
-
-a=text_formater(text,suffix,preffix,capitalize=True)
+def pascal_to_camel(text:str):
+    # text=" "
+    # for i in text:
+    #     if text[0].capitalize==True :
+    #         b=text[0].lower()
+    #         text=text.append(b)
+    return text[0].lower()+text[1:]
+            
+            
+text=input("please enter your  pascal text format :")
+a=pascal_to_camel(text)
+print(f"the converted string is as follows : {a}")
